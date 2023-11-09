@@ -1,0 +1,21 @@
+button {
+  align-items: center;
+  padding: 9px 14px;
+  height: 53px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search {
+  background: #73a672e5;
+  width: 160px;
+}
+
+.save {
+  width: 273px;
+  background: #9747ff;
+}
