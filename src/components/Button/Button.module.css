@@ -1,18 +1,22 @@
 button {
   align-items: center;
   padding: 9px 14px;
-  height: 53px;
   flex-shrink: 0;
   border: none;
   border-radius: 5px;
-  font-size: 25px;
+  font-size: 1.7rem;
   color: #fff;
   cursor: pointer;
 }
 
+button:active {
+  transform: scale(0.98);
+}
+
 .search {
-  background: #73a672e5;
+  background-color: #73a672;
   width: 160px;
+  border-radius: 0 5px 5px 0;
 }
 
 .save {

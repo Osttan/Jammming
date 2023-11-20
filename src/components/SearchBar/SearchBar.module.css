@@ -1,24 +1,15 @@
-input {
-  background: #fff;
-  width: 853px;
-  height: 53px;
-  padding: 10px;
-  border: 0;
-  border-radius: 5px;
-  font-size: 1.3rem;
-}
-
-input:focus {
-  outline: none;
-}
-
 .searchInput {
-  position: relative;
-  display: inline-block;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
 }
 
-.searchInput button {
-  position: absolute;
-  right: 0px;
-  top: 0px;
+.searchInput input {
+  padding: 0 5px;
+  height: 3.6rem;
+  width: 70%;
+  border-radius: 5px 0 0 5px;
+  border: #fff;
+  font-size: 1.3rem;
+  outline-color: #90d08f;
 }
