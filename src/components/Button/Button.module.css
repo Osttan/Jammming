@@ -15,11 +15,13 @@ button:active {
 
 .search {
   background-color: #73a672;
-  width: 160px;
+  width: 130px;
   border-radius: 0 5px 5px 0;
 }
 
 .save {
   width: 273px;
   background: #9747ff;
+  align-self: center;
+  margin: 2.5rem 0;
 }

@@ -1,8 +1,8 @@
 import "./App.css";
 import Title from "./components/Title/Title";
 import SearchBar from "./components/SearchBar/SearchBar";
-import Results from "./components/Results/Results";
-import Button from "./components/Button/Button";
+import SearchResults from "./components/SearchResults/SearchResults";
+import Playlist from "./components/Playlist/Playlist";
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
         <Title />
         <SearchBar />
         <section id="panels">
-          <Results />
-          <Button colorType="save" text="Save to Spotify" />
+          <SearchResults />
+          <Playlist />
         </section>
       </div>
     </div>

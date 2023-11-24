@@ -1,8 +1,7 @@
 import styles from "./Panel.module.css";
 
-function Panel(results) {
-  console.log(results);
-  return <div id={styles.panel}></div>;
+function Panel({ children }) {
+  return <div id={styles.panel}>{children}</div>;
 }
 
 export default Panel;

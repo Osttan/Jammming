@@ -1,0 +1,18 @@
+#playlistName {
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: transparent;
+  color: #fff;
+}
+
+#playlistName::placeholder {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+#playlistName:focus {
+  outline: none;
+}
