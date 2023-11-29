@@ -1,14 +1,14 @@
 import "./SearchResults.module.css";
 import Panel from "../Panel/Panel";
-import SingleResult from "../SingleResult/SingleResult";
+import Track from "../Track/Track";
 
 function SearchResults() {
   return (
     <Panel>
       <h2>Results</h2>
-      <SingleResult />
-      <SingleResult />
-      <SingleResult />
+      <Track panel="results" />
+      <Track panel="results" />
+      <Track panel="results" />
     </Panel>
   );
 }

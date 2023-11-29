@@ -1,5 +1,13 @@
+import Track from "../Track/Track";
+
 function Tracklist() {
-  return <div>Tracklist</div>;
+  return (
+    <>
+      <Track />
+      <Track />
+      <Track />
+    </>
+  );
 }
 
 export default Tracklist;
