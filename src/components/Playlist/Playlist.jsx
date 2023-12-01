@@ -11,7 +11,7 @@ function Playlist() {
         id={styles.playlistName}
         placeholder="Edit playlist name"
       />
-      <Tracklist />
+      {/* <Tracklist /> */}
       <Button colorType="save" text="Save to Spotify" />
     </Panel>
   );

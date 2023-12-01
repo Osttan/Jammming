@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.result p {
+  margin-top: 2px;
+}
+
 .result:last-of-type {
   border-bottom: none;
 }

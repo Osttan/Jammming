@@ -1,4 +1,14 @@
 import styles from "./Track.module.css";
+import Tracklist from "../Tracklist/Tracklist";
+
+const handleClickPlay = (e) => {
+  console.log(e.currentTarget.previousSibling);
+  <Tracklist track={e.currentTarget.previousSibling} />;
+};
+
+const handleClickDelete = () => {
+  console.log("Excluído!");
+};
 
 const playlistSvg = (
   <svg
@@ -7,6 +17,7 @@ const playlistSvg = (
     height="41"
     viewBox="0 0 41 41"
     fill="none"
+    onClick={handleClickDelete}
   >
     <path
       d="M20.5 37.5833C29.9349 37.5833 37.5834 29.9349 37.5834 20.5C37.5834 11.0651 29.9349 3.41666 20.5 3.41666C11.0652 3.41666 3.41669 11.0651 3.41669 20.5C3.41669 29.9349 11.0652 37.5833 20.5 37.5833Z"
@@ -39,6 +50,7 @@ const resultsSvg = (
     height="41"
     viewBox="0 0 41 41"
     fill="none"
+    onClick={handleClickPlay}
   >
     <path
       d="M20.5 37.5833C29.9349 37.5833 37.5833 29.9349 37.5833 20.5C37.5833 11.0651 29.9349 3.41666 20.5 3.41666C11.0651 3.41666 3.41666 11.0651 3.41666 20.5C3.41666 29.9349 11.0651 37.5833 20.5 37.5833Z"
@@ -57,13 +69,13 @@ const resultsSvg = (
   </svg>
 );
 
-function Track({ panel }) {
+function Track({ panel, artist, song, album }) {
   return (
     <div className={styles.result}>
       <div className="result-text">
-        <h3 className="artist">Artist</h3>
-        <p>Song</p>
-        <p>From the Album XXX</p>
+        <h3 className="artist">{artist}</h3>
+        <p>{song}</p>
+        <p>From the Album {album}</p>
       </div>
       {panel ? resultsSvg : playlistSvg}
     </div>

@@ -6,14 +6,16 @@
   margin: 0;
 }
 
+body {
+  background: #90d08f;
+}
+
 #main {
   font-family: "Inter", "sans-serif";
-  background: #90d08f;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
 }
 
 #container {
